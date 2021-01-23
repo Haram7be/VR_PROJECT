@@ -12,6 +12,38 @@
     <title>VR Doctor</title>
 </head>
 <body>
+    <nav class="navbar navbar-expand-sm navbar-light shadow">
 
+        <a class="navbar-brand" href="index.html"><img src="Images/Placeholder.png" alt="Logo"
+                style="width: 40%;"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+            aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active" ><a class="nav-link" href="#">Home</a></li>
+                <li class="nav-item menu" ><a class="nav-link" href="#">Get Started</a></li>
+                <li class="nav-item menu" ><a class="nav-link" href="#">About Us</a></li>
+                <li class="nav-item menu" ><a class="nav-link" href="#">Contact Us</a></li>
+                <li class="nav-item logged-out" >
+                    <a href="#" class="nav-link  modal-trigger" data-toggle="modal" data-target="#modalLoginForm"
+                        style="font-family:Arial, Helvetica, sans-serif;">Login</a>
+                </li>
+                <li class="nav-item logged-in" style="display: none;">
+                    <a href="#" onclick="runAcc()" class="nav-link" id="account">Account</a>
+                </li>
+                <li class="nav-item logged-in" style="display: none;">
+                    <a href="#" class="nav-link" id="logout">Logout</a>
+                </li>
+                <li class="nav-item logged-out">
+                    <a href="#" class="nav-link modal-trigger" data-toggle="modal" data-target="#modalRegisterForm"
+                        style="font-family:Arial, Helvetica, sans-serif;">Sign up</a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
 </body>
 </html>
